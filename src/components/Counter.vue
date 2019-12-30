@@ -14,10 +14,10 @@ export default {
     },
     methods: {
         tang() {
-            this.$emit('updated', 1)
+            this.$store.dispatch('up')
         },
         giam(){
-            this.$emit('updated', -1)
+            this.$store.dispatch('down')
         }
     }
 }
